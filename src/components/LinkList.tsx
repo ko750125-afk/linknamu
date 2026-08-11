@@ -3,7 +3,7 @@ import LinkCard from "@/components/LinkCard";
 
 export default function LinkList() {
   return (
-    <div className="flex w-full flex-col gap-4">
+    <div className="flex w-full flex-col gap-6">
       {links.map((link) => (
         <LinkCard key={link.id} link={link} />
       ))}
