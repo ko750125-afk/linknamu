@@ -16,7 +16,16 @@ export default function Profile() {
       </div>
       <div>
         <h1 className="text-2xl font-bold">{profile.name}</h1>
-        <p className="text-base text-foreground/60">{profile.bio}</p>
+        <div className="flex items-center justify-center gap-2">
+          <p className="text-base text-foreground/60">{profile.bio}</p>
+          <Image
+            src="/qr.png"
+            alt="QR 코드"
+            width={28}
+            height={28}
+            className="rounded-md ring-1 ring-white/60 dark:ring-white/10"
+          />
+        </div>
       </div>
     </div>
   );
