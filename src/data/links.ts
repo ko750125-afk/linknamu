@@ -15,5 +15,9 @@ export const links: LinkItem[] = [
     title: "구구단",
     url: "https://stalwart-torrone-ff5e2f.netlify.app/",
   },
-  { id: "instagram", title: "Instagram", url: "https://instagram.com" },
+  {
+    id: "songpa",
+    title: "송파물류",
+    url: "https://35cuppang.vercel.app/",
+  },
 ];
