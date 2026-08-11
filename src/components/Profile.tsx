@@ -17,7 +17,7 @@ export default function Profile() {
       <div className="w-full">
         <h1 className="text-2xl font-bold">{profile.name}</h1>
         <div className="relative w-full">
-          <p className="pr-16 text-center text-base text-foreground/60">
+          <p className="text-center text-base text-foreground/60">
             {profile.bio}
           </p>
           <Image
