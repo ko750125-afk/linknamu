@@ -10,6 +10,10 @@ export const links: LinkItem[] = [
     title: "Notion",
     url: "https://app.notion.com/p/3af5a81208448060a4a7d2595f2fbaa3?source=copy_link",
   },
-  { id: "github", title: "GitHub", url: "https://github.com" },
+  {
+    id: "gugudan",
+    title: "구구단",
+    url: "https://stalwart-torrone-ff5e2f.netlify.app/",
+  },
   { id: "instagram", title: "Instagram", url: "https://instagram.com" },
 ];
