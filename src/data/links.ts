@@ -20,4 +20,9 @@ export const links: LinkItem[] = [
     title: "송파물류",
     url: "https://35cuppang.vercel.app/",
   },
+  {
+    id: "training-news",
+    title: "훈련소 소식",
+    url: "https://m.blog.naver.com/PostView.naver?blogId=mkkim9601&logNo=224374317001&navType=by",
+  },
 ];
