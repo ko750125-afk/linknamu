@@ -1,6 +1,25 @@
 import { NextResponse } from "next/server";
 import { getMongoClientPromise } from "@/lib/mongodb";
 
+export async function GET() {
+  const clientPromise = getMongoClientPromise();
+
+  if (!clientPromise) {
+    return NextResponse.json({});
+  }
+
+  const client = await clientPromise;
+  const db = client.db();
+  const docs = await db
+    .collection("clicks")
+    .find({}, { projection: { _id: 0, linkId: 1, count: 1 } })
+    .toArray();
+
+  const counts = Object.fromEntries(docs.map((doc) => [doc.linkId, doc.count]));
+
+  return NextResponse.json(counts);
+}
+
 export async function POST(request: Request) {
   const { id } = (await request.json()) as { id?: string };
 
